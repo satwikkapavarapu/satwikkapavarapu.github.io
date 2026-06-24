@@ -10,96 +10,126 @@
   <body>
     <main class="page">
       <header class="masthead">
-        <div>
+        <img class="portrait" src="assets/profile-photo.jpg" alt="Profile photo of Satwik Kapavarapu" />
+        <div class="masthead-copy">
           <h1>Satwik Kapavarapu</h1>
-          <p class="subtitle">Student • builder • researcher</p>
+          <p class="masthead-subtitle">Seattle, Washington</p>
         </div>
         <nav class="nav">
-          <a href="#about">About</a>
-          <a href="#timeline">Timeline</a>
+          <a href="#bio">Bio</a>
+          <a href="#history">History</a>
           <a href="#projects">Research</a>
           <a href="#education">Education</a>
           <a href="#contact">Contact</a>
         </nav>
       </header>
 
-      <section class="hero">
-        <div class="hero-copy">
-          <p>
-            I build clean systems, sharp interfaces, and practical tools. I like pages that are
-            quiet, readable, and focused on the work.
-          </p>
-          <p>
-            I’m working on reliability-aware chip design and machine-learning projects, including
-            a few pending publications.
-          </p>
-        </div>
-        <figure class="portrait">
-          <img src="assets/profile-photo.jpg" alt="Profile photo of Satwik Kapavarapu" />
-        </figure>
-      </section>
-
-      <section id="about" class="section">
-        <h2>About</h2>
+      <section id="bio" class="section bio-section">
+        <h2>Bio</h2>
         <p>
-          Satwik Kapavarapu is a student at the University of Washington who works across research,
-          software, and community-building, with interests in AI, physical design, and practical
-          systems.
-        </p>
-        <p>
-          The page is intentionally restrained: mostly text, thin rules, and one profile photo.
+          I build clean systems, sharp interfaces, and practical tools.
+          I’m working on reliability-aware chip design and machine-learning projects, including a
+          few pending publications.
         </p>
       </section>
 
-      <section id="timeline" class="section">
-        <h2>Timeline</h2>
+      <section id="history" class="section">
+        <h2>History</h2>
         <div class="timeline">
           <article class="timeline-item">
-            <div class="timeline-year">2021</div>
-            <div class="timeline-body">
-              <strong>Software Developer</strong>
-              <span>Wonders &amp; Worries · Remote</span>
+            <div class="timeline-rail">
+              <span class="timeline-dot"></span>
+              <span class="timeline-year">2026–Present</span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-head">
+                <span class="logo logo-saxb">SA</span>
+                <div>
+                  <strong>Co-Director | Founding Team</strong>
+                  <span>Seattle AI X Business · Seattle, WA</span>
+                </div>
+              </div>
             </div>
           </article>
 
           <article class="timeline-item">
-            <div class="timeline-year">2024–2025</div>
-            <div class="timeline-body">
-              <strong>Researcher</strong>
-              <span>Duke University · Remote</span>
-              <span>Leak-reduction DNA circuit simulations with Rajiv Nagipogu and John H. Reif</span>
+            <div class="timeline-rail">
+              <span class="timeline-dot"></span>
+              <span class="timeline-year">2025–2026</span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-head">
+                <span class="logo logo-sef">SE</span>
+                <div>
+                  <strong>Co-founder | Executive Director</strong>
+                  <span>Seattle Energy Forum · Seattle, WA</span>
+                </div>
+              </div>
             </div>
           </article>
 
           <article class="timeline-item">
-            <div class="timeline-year">2025</div>
-            <div class="timeline-body">
-              <strong>Researcher</strong>
-              <span>University of Washington, Electrical &amp; Computer Engineering · Seattle, WA</span>
+            <div class="timeline-rail">
+              <span class="timeline-dot"></span>
+              <span class="timeline-year">2025</span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-head">
+                <span class="logo logo-uw">UW</span>
+                <div>
+                  <strong>Researcher</strong>
+                  <span>University of Washington, Electrical &amp; Computer Engineering · Seattle, WA</span>
+                </div>
+              </div>
             </div>
           </article>
 
           <article class="timeline-item">
-            <div class="timeline-year">2025–2026</div>
-            <div class="timeline-body">
-              <strong>Co-founder | Executive Director</strong>
-              <span>Seattle Energy Forum · Seattle, WA</span>
+            <div class="timeline-rail">
+              <span class="timeline-dot"></span>
+              <span class="timeline-year">2024–2025</span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-head">
+                <span class="logo logo-duke">DU</span>
+                <div>
+                  <strong>Researcher</strong>
+                  <span>Duke University · Remote</span>
+                  <span>Leak-reduction DNA circuit simulations with Rajiv Nagipogu and John H. Reif</span>
+                </div>
+              </div>
             </div>
           </article>
 
           <article class="timeline-item">
-            <div class="timeline-year">2026–Present</div>
-            <div class="timeline-body">
-              <strong>Co-Director | Founding Team</strong>
-              <span>Seattle AI X Business · Seattle, WA</span>
+            <div class="timeline-rail">
+              <span class="timeline-dot"></span>
+              <span class="timeline-year">2021</span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-head">
+                <span class="logo logo-ww">WW</span>
+                <div>
+                  <strong>Software Developer</strong>
+                  <span>Wonders &amp; Worries · Remote</span>
+                </div>
+              </div>
             </div>
           </article>
         </div>
       </section>
 
       <section id="projects" class="section">
-        <h2>Research &amp; featured projects</h2>
+        <h2>Research</h2>
         <div class="project-list">
+          <article>
+            <strong>TraceFence / circuit reliability work</strong>
+            <span class="status">Pending publication</span>
+            <p>
+              Early work on traceable reliability signals for chip design and design-time analysis.
+            </p>
+          </article>
+
           <article>
             <strong>Leveraging Multi-Modal Circuit Features for Early-Stage Aging Prediction</strong>
             <span class="status">Pending publication</span>
@@ -111,19 +141,10 @@
 
           <article>
             <strong>A Novel Approach to Precision Diagnosis of Multiple Sclerosis Brain Lesions…</strong>
-            <span class="status">Google Scholar paper</span>
+            <span class="status">Google Scholar / IEEE paper</span>
             <p>
               A machine-learning paper listed on your Google Scholar profile, focused on MS lesion
               diagnosis with convolutional and embedded-systems methods.
-            </p>
-          </article>
-
-          <article>
-            <strong>Working on reliability-aware chip design and ML</strong>
-            <span class="status">In progress</span>
-            <p>
-              A broader body of work around chip reliability, traceable stress signals, and
-              machine-learning pipelines for early design insight.
             </p>
           </article>
         </div>
@@ -135,9 +156,6 @@
           <strong>University of Washington</strong><br />
           Bachelor of Science — Computer Engineering
         </p>
-        <p>
-          Honors and additional background can be added here if you want them shown publicly.
-        </p>
       </section>
 
       <section id="contact" class="section contact">
@@ -145,7 +163,7 @@
         <p>
           LinkedIn: <a href="https://www.linkedin.com/in/satwikkapavarapu/" target="_blank" rel="noreferrer">satwikkapavarapu</a><br />
           GitHub: <span class="muted">send me the exact link and I’ll wire it in</span><br />
-          Email: <a href="mailto:rkapav@uw.edu">rkapav (at) uw (dot) edu</a>
+          Email: <a href="mailto:rkapav@uw.edu">rkapav [at] uw [dot] edu</a>
         </p>
       </section>
     </main>
