@@ -173,17 +173,17 @@ a:hover {
 .timeline-head {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 18px;
 }
 
 .timeline-logo {
-  flex: 0 0 58px;
-  width: 58px;
-  height: 24px;
+  flex: 0 0 54px;
+  width: 54px;
+  height: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateX(-6px);
+  transform: translateX(-8px);
 }
 
 .logo-img {
@@ -211,12 +211,12 @@ a:hover {
 }
 
 .logo-ww {
-  width: 46px;
-  height: 16px;
+  width: 72px;
+  height: 26px;
 }
 
 .timeline-head > div {
-  margin-left: 10px;
+  margin-left: 14px;
 }
 
 .timeline-head strong,
