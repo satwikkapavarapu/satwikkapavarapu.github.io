@@ -191,11 +191,11 @@ a:hover {
   background: #fafafa;
   color: #333;
 }
-
-.logo-mono {
-  background: #fafafa;
-  color: #333;
-  font-size: 0.66rem;
+.timeline-head {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 12px;
+  align-items: center;
 }
 
 .logo-img {
@@ -208,13 +208,13 @@ a:hover {
 }
 
 .logo-ai {
-  width: 82px;
-  height: 34px;
+  width: 92px;
+  height: 36px;
 }
 
 .logo-sef {
-  width: 82px;
-  height: 34px;
+  width: 92px;
+  height: 36px;
 }
 
 .logo-uw {
@@ -228,7 +228,7 @@ a:hover {
 }
 
 .logo-ww {
-  width: 78px;
+  width: 82px;
   height: 30px;
 }
 
