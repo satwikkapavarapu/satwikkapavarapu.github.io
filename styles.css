@@ -25,23 +25,23 @@ body {
 .page {
   max-width: 900px;
   margin: 0 auto;
-  padding: 28px 20px 60px;
+  padding: 24px 20px 56px;
 }
 
 .masthead {
   display: grid;
-  grid-template-columns: 88px 1fr auto;
-  gap: 14px 20px;
+  grid-template-columns: 100px 1fr auto;
+  gap: 14px 18px;
   align-items: center;
   padding-bottom: 14px;
   border-bottom: 1px solid var(--rule);
 }
 
 .portrait {
-  width: 88px;
-  height: 88px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 13px;
   border: 1px solid var(--rule);
 }
 
@@ -87,14 +87,14 @@ a:hover {
 }
 
 .section {
-  padding: 14px 0;
+  padding: 12px 0;
   border-bottom: 1px solid var(--rule);
 }
 
 .section h2 {
-  margin: 0 0 10px;
+  margin: 0 0 8px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.98rem;
+  font-size: 0.96rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: #222;
@@ -103,7 +103,7 @@ a:hover {
 .section p,
 .section li {
   font-size: 1.02rem;
-  margin: 0 0 12px;
+  margin: 0 0 8px;
 }
 
 .bio-section p {
@@ -114,56 +114,56 @@ a:hover {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  padding-left: 4px;
+  gap: 6px;
+  padding-left: 0;
 }
 
 .timeline::before {
   content: "";
   position: absolute;
-  left: 56px;
-  top: 8px;
-  bottom: 8px;
+  left: 118px;
+  top: 6px;
+  bottom: 6px;
   width: 1px;
   background: linear-gradient(var(--rule), var(--rule));
 }
 
 .timeline-item {
   display: grid;
-  grid-template-columns: 120px 1fr;
-  gap: 14px;
+  grid-template-columns: 108px 22px 1fr;
+  gap: 10px 12px;
   align-items: start;
   position: relative;
 }
 
 .timeline-rail {
   position: relative;
-  min-height: 56px;
-  padding-top: 2px;
+  min-height: 40px;
 }
 
 .timeline-dot {
   position: absolute;
-  left: 49px;
-  top: 16px;
-  width: 16px;
-  height: 16px;
+  left: 50%;
+  top: 14px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background: #fff;
   border: 2px solid #222;
+  transform: translateX(-50%);
   z-index: 1;
 }
 
 .timeline-year {
   display: block;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.76rem;
+  font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   color: #333;
   text-transform: uppercase;
-  padding-top: 8px;
-  padding-left: 4px;
+  padding-top: 10px;
+  text-align: right;
 }
 
 .timeline-content {
@@ -172,20 +172,20 @@ a:hover {
 
 .timeline-head {
   display: grid;
-  grid-template-columns: 40px 1fr;
-  gap: 14px;
+  grid-template-columns: 36px 1fr;
+  gap: 12px;
   align-items: start;
 }
 
 .logo {
   display: grid;
   place-items: center;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   border-radius: 999px;
   border: 1px solid var(--rule);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.72rem;
+  font-size: 0.67rem;
   font-weight: 700;
   letter-spacing: 0.06em;
   background: #fafafa;
@@ -207,6 +207,11 @@ a:hover {
   margin-bottom: 2px;
 }
 
+.edu-sub {
+  display: block;
+  margin-top: 2px;
+}
+
 .timeline-head span,
 .status,
 .muted {
@@ -216,15 +221,15 @@ a:hover {
 
 .project-list {
   display: grid;
-  gap: 18px;
+  gap: 8px;
 }
 
 .project-list article {
-  padding: 0 0 2px;
+  padding: 0;
 }
 
 .project-list p {
-  margin-top: 6px;
+  margin-top: 2px;
   max-width: 76ch;
 }
 
@@ -273,26 +278,25 @@ a:hover {
   }
 
   .timeline::before {
-    left: 42px;
+    left: 72px;
   }
 
   .timeline-item {
-    grid-template-columns: 1fr;
-    gap: 6px;
+    grid-template-columns: 64px 16px 1fr;
+    gap: 8px 10px;
   }
 
   .timeline-dot {
-    left: 35px;
+    top: 13px;
   }
 
   .timeline-rail {
-    min-height: 36px;
+    min-height: 34px;
     padding-left: 0;
   }
 
   .timeline-year {
-    padding-left: 60px;
-    padding-top: 4px;
+    padding-top: 8px;
   }
 
   .timeline-head {
