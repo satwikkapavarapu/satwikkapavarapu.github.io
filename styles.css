@@ -173,17 +173,17 @@ a:hover {
 .timeline-head {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
 }
 
 .timeline-logo {
-  flex: 0 0 70px;
-  width: 70px;
-  height: 30px;
+  flex: 0 0 58px;
+  width: 58px;
+  height: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateX(-4px);
+  transform: translateX(-6px);
 }
 
 .logo-img {
@@ -206,17 +206,17 @@ a:hover {
 
 .logo-uw,
 .logo-duke {
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
 }
 
 .logo-ww {
-  width: 54px;
-  height: 20px;
+  width: 46px;
+  height: 16px;
 }
 
 .timeline-head > div {
-  margin-left: 12px;
+  margin-left: 10px;
 }
 
 .timeline-head strong,
