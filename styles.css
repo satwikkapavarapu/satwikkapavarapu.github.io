@@ -177,9 +177,9 @@ a:hover {
 }
 
 .timeline-logo {
-  flex: 0 0 132px;
-  width: 132px;
-  height: 48px;
+  flex: 0 0 100px;
+  width: 100px;
+  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -322,9 +322,9 @@ a:hover {
   }
 
   .timeline-logo {
-    flex: 0 0 102px;
-    width: 102px;
-    height: 40px;
+    flex: 0 0 76px;
+    width: 76px;
+    height: 30px;
     transform: translateX(-2px);
   }
 }
