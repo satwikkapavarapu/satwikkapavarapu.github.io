@@ -3,162 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Personal portfolio website" />
-    <title>Saketh — Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <meta name="description" content="Satwik's personal portfolio" />
+    <title>Satwik</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="bg-orb orb-1"></div>
-    <div class="bg-orb orb-2"></div>
-    <div class="bg-grid"></div>
-
-    <header class="topbar">
-      <a class="brand" href="#home">Saketh</a>
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
-    <main id="home" class="shell">
-      <section class="hero card">
-        <div class="hero-copy">
-          <p class="eyebrow">Portfolio • Research • Building</p>
-          <h1>Designing clean, fast, human-centered digital experiences.</h1>
-          <p class="lede">
-            I’m Saketh — a student and builder who likes turning ideas into polished products,
-            useful tools, and clear interfaces.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#work">View work</a>
-            <a class="button secondary" href="#contact">Get in touch</a>
-          </div>
-          <div class="hero-meta">
-            <div>
-              <span class="meta-label">Based in</span>
-              <span class="meta-value">Seattle / UW</span>
-            </div>
-            <div>
-              <span class="meta-label">Focus</span>
-              <span class="meta-value">Web, systems, AI</span>
-            </div>
-            <div>
-              <span class="meta-label">Status</span>
-              <span class="meta-value">Open to opportunities</span>
-            </div>
-          </div>
+    <main class="page">
+      <header class="masthead">
+        <div>
+          <h1>Satwik</h1>
+          <p class="subtitle">Student • Builder • Research-minded</p>
         </div>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#links">Links</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
 
-        <aside class="hero-panel">
-          <div class="profile-card">
-            <div class="avatar">S</div>
-            <div>
-              <h2>Saketh</h2>
-              <p>ECE student • builder • curious generalist</p>
-            </div>
-          </div>
-
-          <div class="stat-grid">
-            <div class="stat">
-              <span class="stat-num">03+</span>
-              <span class="stat-label">featured projects</span>
-            </div>
-            <div class="stat">
-              <span class="stat-num">10k+</span>
-              <span class="stat-label">ideas sketched</span>
-            </div>
-            <div class="stat wide">
-              <span class="stat-num">Available for</span>
-              <span class="stat-label">internships, collaborations, and portfolio tweaks</span>
-            </div>
-          </div>
-        </aside>
+      <section class="intro">
+        <p>
+          I build useful interfaces, practical tools, and simple systems. I like pages that are
+          quiet, readable, and focused on the work.
+        </p>
       </section>
 
-      <section id="about" class="section card">
-        <div class="section-head">
-          <p class="eyebrow">About</p>
-          <h2>Built to feel sharp, simple, and personal.</h2>
-        </div>
-        <div class="two-col">
-          <p>
-            This first draft is intentionally flexible: we can swap the copy, colors, layout,
-            project list, and contact links once you see it locally.
-          </p>
-          <p>
-            The site uses only static HTML, CSS, and a tiny bit of JavaScript, so it will be easy
-            to host on GitHub Pages later and simple to edit fast.
-          </p>
-        </div>
+      <section id="about" class="section">
+        <h2>About</h2>
+        <p>
+          I’m Satwik, a student who likes clean design, software, and projects that make complex
+          things feel obvious.
+        </p>
+        <p>
+          This portfolio is intentionally minimal — inspired by the simplicity of old-school academic
+          and research pages.
+        </p>
       </section>
 
       <section id="work" class="section">
-        <div class="section-head">
-          <p class="eyebrow">Selected Work</p>
-          <h2>Projects I’d feature on a portfolio.</h2>
-        </div>
-        <div class="project-grid">
-          <article class="project card">
-            <span class="project-tag">Product</span>
-            <h3>Signal Deck Dashboard</h3>
-            <p>
-              A command center for personal workflows, reminders, and everyday tools — optimized
-              for clarity and speed.
-            </p>
-          </article>
-          <article class="project card">
-            <span class="project-tag">Research</span>
-            <h3>Intelligent Study Planner</h3>
-            <p>
-              A scheduling system that compresses a huge workload into a clean, focused plan with
-              the right priorities.
-            </p>
-          </article>
-          <article class="project card">
-            <span class="project-tag">Web</span>
-            <h3>Portfolio Experience Design</h3>
-            <p>
-              A responsive site with strong typography, layered depth, and a polished first-impression.
-            </p>
-          </article>
-        </div>
+        <h2>Selected work</h2>
+        <ul class="list">
+          <li>
+            <strong>Signal Deck</strong> — a dashboard for personal workflows and everyday utility.
+          </li>
+          <li>
+            <strong>Study planning tools</strong> — systems for organizing deadlines, focus blocks,
+            and workload.
+          </li>
+          <li>
+            <strong>Portfolio / web design</strong> — simple sites with strong typography and
+            restrained layouts.
+          </li>
+        </ul>
       </section>
 
-      <section id="skills" class="section card">
-        <div class="section-head">
-          <p class="eyebrow">Skills</p>
-          <h2>What I like working with.</h2>
-        </div>
-        <div class="chips">
-          <span>React</span>
-          <span>TypeScript</span>
-          <span>Python</span>
-          <span>Systems</span>
-          <span>Design</span>
-          <span>AI tooling</span>
-          <span>APIs</span>
-          <span>Git / GitHub</span>
-        </div>
+      <section id="links" class="section">
+        <h2>Links</h2>
+        <ul class="links">
+          <li><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+          <li><a href="mailto:hello@satwik.dev">Email</a></li>
+        </ul>
       </section>
 
-      <section id="contact" class="section card contact">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>Let’s make this site yours.</h2>
-          <p>
-            Send me your changes after you preview it locally, and I’ll update the content and
-            structure quickly.
-          </p>
-        </div>
-        <a class="button primary" href="mailto:you@example.com">you@example.com</a>
+      <section id="contact" class="section contact">
+        <h2>Contact</h2>
+        <p>
+          If you want to talk, email <a href="mailto:hello@satwik.dev">hello@satwik.dev</a>.
+        </p>
       </section>
     </main>
-
-    <script src="script.js"></script>
   </body>
 </html>
