@@ -131,7 +131,7 @@ a:hover {
 .timeline-item {
   display: grid;
   grid-template-columns: 102px 24px 1fr;
-  gap: 10px 10px;
+  gap: 10px 8px;
   align-items: start;
   position: relative;
 }
@@ -173,17 +173,17 @@ a:hover {
 .timeline-head {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 12px;
 }
 
 .timeline-logo {
-  flex: 0 0 54px;
-  width: 54px;
-  height: 22px;
+  flex: 0 0 132px;
+  width: 132px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateX(-8px);
+  transform: translateX(-4px);
 }
 
 .logo-img {
@@ -194,30 +194,25 @@ a:hover {
   border-radius: 0;
   background: transparent;
   padding: 0;
+  width: auto;
+  height: 100%;
   max-width: 100%;
   max-height: 100%;
 }
 
 .logo-ai,
-.logo-sef {
-  width: 100%;
+.logo-sef,
+.logo-uw,
+.logo-duke,
+.logo-ww {
+  width: auto;
   height: 100%;
 }
 
-.logo-uw,
-.logo-duke {
-  width: 36px;
-  height: 36px;
-}
-
-.logo-ww {
-  width: 72px;
-  height: 26px;
-}
-
 .timeline-head > div {
-  margin-left: 14px;
+  margin-left: 0;
 }
+
 
 .timeline-head strong,
 .project-list strong,
@@ -304,7 +299,7 @@ a:hover {
 
   .timeline-item {
     grid-template-columns: 92px 18px 1fr;
-    gap: 8px 8px;
+    gap: 8px 6px;
   }
 
   .timeline-dot {
@@ -323,6 +318,13 @@ a:hover {
   .timeline-head {
     display: flex;
     align-items: flex-start;
-    gap: 12px;
+    gap: 10px;
+  }
+
+  .timeline-logo {
+    flex: 0 0 102px;
+    width: 102px;
+    height: 40px;
+    transform: translateX(-2px);
   }
 }
