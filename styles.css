@@ -1,8 +1,8 @@
 :root {
   --bg: #ffffff;
-  --text: #111111;
-  --muted: #555555;
-  --rule: #d9d9d9;
+  --text: #161616;
+  --muted: #707070;
+  --rule: #e0e0e0;
   --link: #0b57d0;
 }
 
@@ -19,85 +19,93 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: Georgia, "Times New Roman", Times, serif;
-  line-height: 1.6;
+  line-height: 1.62;
 }
 
 .page {
   max-width: 900px;
   margin: 0 auto;
-  padding: 24px 20px 56px;
+  padding: 28px 32px 72px;
 }
 
-.masthead {
+.profile {
   display: grid;
-  grid-template-columns: 156px 1fr auto;
-  gap: 14px 18px;
-  align-items: center;
-  padding-bottom: 14px;
+  justify-items: center;
+  text-align: center;
+  padding: 8px 0 42px;
   border-bottom: 1px solid var(--rule);
 }
 
 .portrait {
-  width: 156px;
-  height: 156px;
+  width: 148px;
+  height: 148px;
   object-fit: cover;
-  border-radius: 1px;
+  object-position: center;
+  border-radius: 50%;
   border: 1px solid var(--rule);
 }
 
-.masthead-copy {
+.profile-copy {
   min-width: 0;
 }
 
 h1 {
-  margin: 0;
-  font-size: clamp(2.1rem, 5vw, 4.3rem);
-  line-height: 0.92;
+  margin: 17px 0 0;
+  font-size: clamp(2.15rem, 5vw, 3.15rem);
+  line-height: 1.08;
   font-weight: 700;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.035em;
 }
 
-.masthead-subtitle {
-  margin: 8px 0 0;
+.location {
+  margin: 6px 0 0;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.86rem;
+  font-size: 0.92rem;
   color: var(--muted);
 }
 
-.nav {
+.profile-bio {
+  max-width: 68ch;
+  margin: 23px auto 0;
+  font-size: 1.04rem;
+  text-align: left;
+}
+
+.profile-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px 16px;
-  justify-content: flex-end;
-  align-self: start;
-  padding-top: 12px;
+  justify-content: center;
+  gap: 8px 20px;
+  margin-top: 18px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.92rem;
+  font-size: 0.94rem;
 }
 
-.nav a,
 a {
   color: var(--link);
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 0.14em;
 }
 
-.nav a:hover,
 a:hover {
-  text-decoration: underline;
+  color: #073f9b;
 }
 
 .section {
-  padding: 12px 0;
+  padding: 34px 0 38px;
   border-bottom: 1px solid var(--rule);
+  scroll-margin-top: 20px;
 }
 
 .section h2 {
-  margin: 0 0 8px;
+  margin: 0 0 14px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.96rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: #222;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  text-transform: lowercase;
+  color: #242424;
 }
 
 .section p,
@@ -106,31 +114,26 @@ a:hover {
   margin: 0 0 8px;
 }
 
-.bio-section p {
-  max-width: 70ch;
-}
-
 .timeline {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  padding-left: 0;
+  gap: 15px;
 }
 
 .timeline::before {
   content: "";
   position: absolute;
-  left: 123px;
-  top: 6px;
-  bottom: 6px;
+  left: 124px;
+  top: 8px;
+  bottom: 8px;
   width: 2px;
-  background: #d6d6d6;
+  background: #dedede;
 }
 
 .timeline-item {
   display: grid;
-  grid-template-columns: 102px 24px 1fr;
+  grid-template-columns: 104px 24px minmax(0, 1fr);
   gap: 10px 8px;
   align-items: start;
   position: relative;
@@ -138,81 +141,69 @@ a:hover {
 
 .timeline-rail {
   position: relative;
-  min-height: 40px;
+  min-height: 42px;
 }
 
 .timeline-dot {
   position: absolute;
   left: 50%;
   top: 12px;
-  width: 13px;
-  height: 13px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  background: #fff;
-  border: 2px solid #222;
+  background: var(--bg);
+  border: 2px solid #999;
   transform: translateX(-50%);
   z-index: 1;
 }
 
 .timeline-year {
   display: block;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  color: #333;
-  text-transform: uppercase;
-  padding-top: 10px;
+  padding-top: 9px;
   text-align: right;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.77rem;
+  color: var(--muted);
+  white-space: nowrap;
 }
 
 .timeline-content {
+  min-width: 0;
   padding: 2px 0 0;
 }
 
 .timeline-head {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
 }
 
 .timeline-logo {
-  flex: 0 0 100px;
-  width: 100px;
-  height: 36px;
   display: flex;
+  flex: 0 0 82px;
+  width: 82px;
+  height: 38px;
   align-items: center;
   justify-content: center;
-  transform: translateX(-4px);
 }
 
 .logo-img {
   display: block;
   flex: 0 0 auto;
-  object-fit: contain;
-  border: none;
-  border-radius: 0;
-  background: transparent;
-  padding: 0;
   width: auto;
   height: 100%;
   max-width: 100%;
   max-height: 100%;
+  object-fit: contain;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  padding: 0;
 }
 
-.logo-ai,
-.logo-sef,
-.logo-uw,
-.logo-duke,
-.logo-ww {
-  width: auto;
-  height: 100%;
+.timeline-head > div:last-child {
+  min-width: 0;
 }
-
-.timeline-head > div {
-  margin-left: 0;
-}
-
 
 .timeline-head strong,
 .project-list strong,
@@ -220,111 +211,166 @@ a:hover {
   display: block;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
+  line-height: 1.45;
   margin-bottom: 2px;
+}
+
+.timeline-head span,
+.muted {
+  display: block;
+  color: var(--muted);
+  font-size: 0.96rem;
+}
+
+.project-list article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 14px 0 17px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.project-list article:first-child {
+  padding-top: 0;
+}
+
+.project-list article:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.project-list strong {
+  margin-bottom: 0;
+}
+
+.project-list p {
+  max-width: 76ch;
+  margin: 4px 0 0;
+}
+
+.status {
+  order: -1;
+  display: block;
+  margin: 0 0 3px;
+  color: var(--muted);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
 }
 
 .edu-sub {
   display: block;
-  margin-top: 2px;
-}
-
-.timeline-head span,
-.status,
-.muted {
-  display: block;
-  color: var(--muted);
-}
-
-.project-list {
-  display: grid;
-  gap: 8px;
-}
-
-.project-list article {
-  padding: 0;
-}
-
-.project-list p {
-  margin-top: 2px;
-  max-width: 76ch;
-}
-
-.status {
-  margin-top: 2px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.88rem;
+  margin-top: 3px;
 }
 
 .contact {
-  border-bottom: 0;
   padding-bottom: 0;
+  border-bottom: 0;
 }
 
-@media (max-width: 860px) {
-  .masthead {
-    grid-template-columns: 136px 1fr;
-  }
-
-  .nav {
-    grid-column: 1 / -1;
-    justify-content: flex-start;
-    padding-top: 0;
-  }
-
-  .portrait {
-    width: 136px;
-    height: 136px;
-  }
+.contact p {
+  margin-bottom: 0;
 }
 
 @media (max-width: 720px) {
   .page {
-    padding: 24px 18px 56px;
+    padding: 24px 20px 56px;
   }
 
-  .masthead {
-    grid-template-columns: 104px 1fr;
-    gap: 14px 18px;
+  .profile {
+    padding-bottom: 34px;
   }
 
   .portrait {
-    width: 104px;
-    height: 104px;
-    border-radius: 1px;
+    width: 132px;
+    height: 132px;
+  }
+
+  .section {
+    padding: 30px 0 34px;
   }
 
   .timeline::before {
-    left: 108px;
+    left: 104px;
   }
 
   .timeline-item {
-    grid-template-columns: 92px 18px 1fr;
+    grid-template-columns: 88px 20px minmax(0, 1fr);
     gap: 8px 6px;
   }
 
-  .timeline-dot {
-    top: 12px;
-  }
-
-  .timeline-rail {
-    min-height: 34px;
-    padding-left: 0;
-  }
-
   .timeline-year {
+    font-size: 0.7rem;
     padding-top: 8px;
   }
 
   .timeline-head {
-    display: flex;
     align-items: flex-start;
     gap: 10px;
   }
 
   .timeline-logo {
-    flex: 0 0 76px;
-    width: 76px;
-    height: 30px;
-    transform: translateX(-2px);
+    flex-basis: 68px;
+    width: 68px;
+    height: 31px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page {
+    padding: 20px 17px 48px;
+  }
+
+  .portrait {
+    width: 120px;
+    height: 120px;
+  }
+
+  h1 {
+    font-size: 2.15rem;
+  }
+
+  .profile-bio,
+  .section p,
+  .section li {
+    font-size: 0.98rem;
+  }
+
+  .profile-links {
+    gap: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .section h2 {
+    font-size: 1.38rem;
+  }
+
+  .timeline::before {
+    left: 82px;
+  }
+
+  .timeline-item {
+    grid-template-columns: 68px 18px minmax(0, 1fr);
+    gap: 8px 5px;
+  }
+
+  .timeline-year {
+    font-size: 0.64rem;
+    white-space: normal;
+  }
+
+  .timeline-logo {
+    flex-basis: 56px;
+    width: 56px;
+    height: 28px;
+  }
+
+  .timeline-head {
+    gap: 8px;
+  }
+
+  .timeline-head strong,
+  .project-list strong,
+  #education strong {
+    font-size: 0.95rem;
   }
 }
