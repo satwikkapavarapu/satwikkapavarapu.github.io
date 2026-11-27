@@ -262,6 +262,31 @@ a:hover {
   margin-top: 3px;
 }
 
+.more-awards {
+  margin-top: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+}
+
+.more-awards summary {
+  display: inline-block;
+  padding: 7px 12px;
+  color: #0b57d0;
+  background: #eef4ff;
+  border: 1px solid #d5e2fa;
+  border-radius: 4px;
+  cursor: pointer;
+  list-style-position: inside;
+}
+
+.more-awards summary:hover {
+  background: #e3edff;
+}
+
+.more-awards[open] .project-list {
+  margin-top: 14px;
+}
+
 .contact {
   padding-bottom: 0;
   border-bottom: 0;
