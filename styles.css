@@ -269,18 +269,28 @@ a:hover {
 }
 
 .more-awards summary {
-  display: inline-block;
-  padding: 7px 12px;
-  color: #0b57d0;
-  background: #eef4ff;
-  border: 1px solid #d5e2fa;
-  border-radius: 4px;
+  display: inline;
+  color: var(--link);
   cursor: pointer;
-  list-style-position: inside;
+  list-style: none;
 }
 
 .more-awards summary:hover {
-  background: #e3edff;
+  text-decoration: underline;
+  text-underline-offset: 0.14em;
+}
+
+.more-awards summary::-webkit-details-marker {
+  display: none;
+}
+
+.more-awards summary:focus-visible {
+  outline: 2px solid rgba(11, 87, 208, 0.4);
+  outline-offset: 3px;
+}
+
+.award-arrow {
+  margin-left: 0.2em;
 }
 
 .more-awards[open] .project-list {
