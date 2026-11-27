@@ -14,6 +14,20 @@ html {
   scroll-behavior: smooth;
 }
 
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -60px;
+  z-index: 10;
+  padding: 8px 12px;
+  background: #fff;
+  color: var(--link);
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
 body {
   margin: 0;
   background: var(--bg);
@@ -79,6 +93,16 @@ h1 {
   margin-top: 18px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.94rem;
+}
+
+.section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 18px;
+  margin-top: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
 }
 
 a {
@@ -206,6 +230,7 @@ a:hover {
 }
 
 .timeline-head strong,
+.project-list h3,
 .project-list strong,
 #education strong {
   display: block;
@@ -241,6 +266,12 @@ a:hover {
 
 .project-list strong {
   margin-bottom: 0;
+}
+
+.project-list h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 .project-list p {
@@ -284,6 +315,23 @@ a:hover {
   display: none;
 }
 
+.hide-awards {
+  display: none;
+}
+
+.more-awards[open] .show-awards {
+  display: none;
+}
+
+.more-awards[open] .hide-awards {
+  display: inline;
+}
+
+.more-awards[open] .award-arrow {
+  display: inline-block;
+  transform: rotate(180deg);
+}
+
 .more-awards summary:focus-visible {
   outline: 2px solid rgba(11, 87, 208, 0.4);
   outline-offset: 3px;
@@ -324,18 +372,33 @@ a:hover {
     padding: 30px 0 34px;
   }
 
-  .timeline::before {
-    left: 104px;
+  .timeline-item {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 3px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--rule);
   }
 
-  .timeline-item {
-    grid-template-columns: 88px 20px minmax(0, 1fr);
-    gap: 8px 6px;
+  .timeline-item:last-child {
+    border-bottom: 0;
+  }
+
+  .timeline::before {
+    display: none;
+  }
+
+  .timeline-rail {
+    display: none;
+  }
+
+  .timeline-content {
+    grid-column: 1;
   }
 
   .timeline-year {
-    font-size: 0.7rem;
-    padding-top: 8px;
+    padding: 0;
+    text-align: left;
+    font-size: 0.875rem;
   }
 
   .timeline-head {
@@ -344,9 +407,9 @@ a:hover {
   }
 
   .timeline-logo {
-    flex-basis: 68px;
-    width: 68px;
-    height: 31px;
+    flex-basis: 48px;
+    width: 48px;
+    height: 28px;
   }
 }
 
@@ -367,7 +430,7 @@ a:hover {
   .profile-bio,
   .section p,
   .section li {
-    font-size: 0.98rem;
+    font-size: 1rem;
   }
 
   .profile-links {
@@ -375,37 +438,17 @@ a:hover {
     font-size: 0.9rem;
   }
 
-  .section h2 {
-    font-size: 1.38rem;
-  }
-
-  .timeline::before {
-    left: 82px;
-  }
-
-  .timeline-item {
-    grid-template-columns: 68px 18px minmax(0, 1fr);
-    gap: 8px 5px;
-  }
-
-  .timeline-year {
-    font-size: 0.64rem;
-    white-space: normal;
-  }
-
-  .timeline-logo {
-    flex-basis: 56px;
-    width: 56px;
-    height: 28px;
-  }
-
-  .timeline-head {
-    gap: 8px;
-  }
-
+  .section h2 { font-size: 1.38rem; }
+  .timeline-head { gap: 10px; }
   .timeline-head strong,
+  .project-list h3,
   .project-list strong,
-  #education strong {
-    font-size: 0.95rem;
-  }
+  #education strong { font-size: 1rem; }
+  .timeline-head span,
+  .status { font-size: 0.875rem; }
+  .section-nav { gap: 8px 14px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
 }
